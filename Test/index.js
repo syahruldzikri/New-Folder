@@ -1,11 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
-import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
+import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker,Tab } from 'react-native';
+import {createStackNavigator, createDrawerNavigator,createTabNavigator } from 'react-navigation';
 
 class App extends React.Component {
 
   _next = () => {
     this.props.navigation.navigate('Pagenext');
+
   }
 
   render() {
@@ -42,5 +43,6 @@ export default createStackNavigator(
   {
     Home: {screen: App},
     Pagenext: {screen: FirebaseRead},
+
   }
 );

@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
-import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
+import {createStackNavigator, createDrawerNavigator,createTabNavigator } from 'react-navigation';
 import gambaa from './logweb2.jpg';
 import Hahaha from './haha.js'
 import Pegipage from './page.js'
 import Lol from './mainpage.js'
-
 import Test from './Test/index.js';
+import Tab from './Test/Tab.js'
+
 
  class App extends React.Component {
 
@@ -44,6 +45,7 @@ export default createDrawerNavigator({
   Counter : {screen : Pegipage},
   Vision : {screen : Lol},
   Test : {screen : Test},
+  Tab : {screen : Tab},
 });
 
 const styles = StyleSheet.create({
