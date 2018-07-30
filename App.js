@@ -6,6 +6,16 @@ import Hahaha from './haha.js'
 import Pegipage from './page.js'
 import Lol from './mainpage.js'
 
+const config = {
+  apiKey: "AIzaSyA3NYC1yJfUv3JEA0feUkcJZTGsUnJZfdo",
+  authDomain: "hospitalservice-1.firebaseapp.com",
+  databaseURL: "https://hospitalservice-1.firebaseio.com",
+  projectId: "hospitalservice-1",
+  storageBucket: "hospitalservice-1.appspot.com",
+  messagingSenderId: "627061727369"
+};
+firebase.initializeApp(config);
+
  class App extends React.Component {
 
 _click = () => {
