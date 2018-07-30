@@ -8,8 +8,8 @@ class UIDesign extends React.Component {
 
       <View style={styles.container2}>
         <Text>title</Text> ///main page design for top
-        
-class HomeScreen extends React.Component {
+
+class UIDesign extends React.Component {
           render() {
             return (
               <View style={{ flex: 1, justifyContent: 'left', alignItems: 'left' }}>
@@ -21,7 +21,7 @@ class HomeScreen extends React.Component {
          <View style={styles.container2}>
           <Text>Search</Text> ///for google map search
 
-class HomeScreen extends React.Component {
+class UIDesign extends React.Component {
                     render() {
                       return (
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
