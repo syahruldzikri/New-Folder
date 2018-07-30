@@ -1,5 +1,5 @@
 - import { DrawerNavigator } from 'react-navigation';
-+ import { DrawerNavigator, DrawerItems } from 'react-navigation';
++ import { createStackNavigator, createDrawerNavigator, DrawerItems } from 'react-navigation';
 
 const App = DrawerNavigator({
   Home: {
