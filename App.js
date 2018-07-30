@@ -6,6 +6,8 @@ import Hahaha from './haha.js'
 import Pegipage from './page.js'
 import Lol from './mainpage.js'
 
+import Test from './Test/index.js';
+
  class App extends React.Component {
 
 _click = () => {
@@ -41,6 +43,7 @@ export default createDrawerNavigator({
   Home : {screen : App},
   Counter : {screen : Pegipage},
   Vision : {screen : Lol},
+  Test : {screen : Test},
 });
 
 const styles = StyleSheet.create({
