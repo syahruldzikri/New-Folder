@@ -1,32 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
-import {createStackNavigator, createDrawerNavigator,createTabNavigator } from 'react-navigation';
+import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import gambaa from './logweb2.jpg';
-<<<<<<< HEAD
 import Hahaha from './haha.js'
 import Pegipage from './page.js'
 import Lol from './mainpage.js'
-=======
-import Hahaha from './haha.js';
-import Pegipage from './page.js';
-import Lol from './mainpage.js';
-
->>>>>>> ace651b76c009ca96eaa7b5c8270383fd7068f36
-import Test from './Test/index.js';
-import Tab from './Test/Tab.js'
-
-
-import * as firebase from 'firebase';
-
-const config = {
-  apiKey: "AIzaSyA3NYC1yJfUv3JEA0feUkcJZTGsUnJZfdo",
-  authDomain: "hospitalservice-1.firebaseapp.com",
-  databaseURL: "https://hospitalservice-1.firebaseio.com",
-  projectId: "hospitalservice-1",
-  storageBucket: "hospitalservice-1.appspot.com",
-  messagingSenderId: "627061727369"
-};
-firebase.initializeApp(config);
 
  class App extends React.Component {
 
@@ -63,12 +41,6 @@ export default createDrawerNavigator({
   Home : {screen : App},
   Counter : {screen : Pegipage},
   Vision : {screen : Lol},
-<<<<<<< HEAD
-  Test : {screen : Test},
-  Tab : {screen : Tab},
-=======
-  Test : { screen : Test},
->>>>>>> ace651b76c009ca96eaa7b5c8270383fd7068f36
 });
 const styles = StyleSheet.create({
   container: {
