@@ -1,12 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker,Tab } from 'react-native';
 import {createStackNavigator, createDrawerNavigator,createTabNavigator } from 'react-navigation';
-=======
-import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
-import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import firebasereader from './firebaseRead.js'
->>>>>>> ace651b76c009ca96eaa7b5c8270383fd7068f36
 
 class App extends React.Component {
 
@@ -67,15 +62,11 @@ const styles = StyleSheet.create({
 export default createStackNavigator(
   {
     Home: {screen: App},
-<<<<<<< HEAD
     Pagenext: {screen: FirebaseRead},
-
-=======
     Pagenext: {screen: firebasereader},
     PageUI: {screen: UIDesign},
   },
   {
     headerMode: null,
->>>>>>> ace651b76c009ca96eaa7b5c8270383fd7068f36
   }
 );
