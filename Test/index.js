@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
 import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
-import * as firebase from 'firebase';
+import firebasereader from './firebaseRead.js'
 
 class App extends React.Component {
 
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
 export default createStackNavigator(
   {
     Home: {screen: App},
-    Pagenext: {screen: FirebaseRead},
+    Pagenext: {screen: firebasereader},
     PageUI: {screen: UIDesign},
   },
   {

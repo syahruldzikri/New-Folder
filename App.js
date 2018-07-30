@@ -2,9 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
 import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import gambaa from './logweb2.jpg';
-import Hahaha from './haha.js'
-import Pegipage from './page.js'
-import Lol from './mainpage.js'
+import Hahaha from './haha.js';
+import Pegipage from './page.js';
+import Lol from './mainpage.js';
+
+import Test from './Test/index.js';
+
+import * as firebase from 'firebase';
 
 const config = {
   apiKey: "AIzaSyA3NYC1yJfUv3JEA0feUkcJZTGsUnJZfdo",
@@ -51,6 +55,7 @@ export default createDrawerNavigator({
   Home : {screen : App},
   Counter : {screen : Pegipage},
   Vision : {screen : Lol},
+  Test : { screen : Test},
 });
 const styles = StyleSheet.create({
   container: {
