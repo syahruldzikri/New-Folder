@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 
 import { Platform, StyleSheet, View, Text, Image, TouchableOpacity, Alert } from 'react-native';
@@ -37,6 +38,23 @@ export default class Myapp extends Component<{}>
     }, 5000);
 
 
+=======
+import React from 'react';
+import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
+import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
+import gambaa from './logweb2.jpg';
+import Hahaha from './haha.js'
+import Pegipage from './page.js'
+import Lol from './mainpage.js'
+
+import Test from './Test/index.js';
+
+ class App extends React.Component {
+
+_click = () => {
+  Alert.alert("Hotline Hospital Sultan Ismail", "No contact: 07-3565000");
+}
+>>>>>>> f2eb8aec7e980251673cb615a41946861cce9eab
 
   }
 
@@ -97,6 +115,7 @@ const styles = StyleSheet.create(
         width: '100%',
         height: '100%',
 
+<<<<<<< HEAD
     },
 
     SplashScreen_ChildView:
@@ -115,6 +134,14 @@ const styles = StyleSheet.create(
         top:9,
         right:9,
         position: 'absolute'
+=======
+export default createDrawerNavigator({
+  Home : {screen : App},
+  Counter : {screen : Pegipage},
+  Vision : {screen : Lol},
+  Test : {screen : Test},
+});
+>>>>>>> f2eb8aec7e980251673cb615a41946861cce9eab
 
     }
 });
