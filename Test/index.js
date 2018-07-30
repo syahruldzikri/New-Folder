@@ -7,12 +7,16 @@ class App extends React.Component {
   _next = () => {
     this.props.navigation.navigate('Pagenext');
   }
+  _UIUX = () => {
+    this.props.navigation.navigate('PageUI');
+  }
 
   render() {
     return(
       <View style={styles.container}>
         <Text>This Page contains all the functions</Text>
         <Button title="Firebase Read" onPress={this._next}/>
+        <Button title="UI/UX" onPress={this._UIUX}/>
       </View>
     )
   }
@@ -28,12 +32,27 @@ class FirebaseRead extends React.Component {
   }
 }
 
+class UIDesign extends React.Component {
+  render() {
+    return (
+      <View style={styles.container2}>
+        <Text>This is the UI/UX design</Text>
+      </View>
+    )
+  }
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  container2: {
+    borderColor: 'black',
+    height: 40,
+    borderWidth: 3,
   },
 });
 
@@ -42,5 +61,9 @@ export default createStackNavigator(
   {
     Home: {screen: App},
     Pagenext: {screen: FirebaseRead},
+    PageUI: {screen: UIDesign},
+  },
+  {
+    headerMode: null,
   }
 );
