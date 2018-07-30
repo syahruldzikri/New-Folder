@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, Image, Textinput, Picker } from 'react-native';
 import {createStackNavigator, createDrawerNavigator } from 'react-navigation';
+import * as firebase from 'firebase';
 
 class App extends React.Component {
 
